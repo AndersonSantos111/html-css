@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+/*  PARA RESPONSIVIDADE DO SITE*/
+
+
+
+/* FORMATAÇÕES E DESIGN */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #9AD6AB, #7DA789);
+}
+
+/* Cabeçalho */
+header {
+    background-image: linear-gradient(to top, #266538, #5FAD73 85%, white 139%);
+    padding: 20px 5px 0px ;
+    border-radius: 3px;
+}
+
+nav {
+    background-color: #26332a38;
+    padding: 5px;
+    padding-left: 2em;
+    border-radius: 6px;
+}
+
+.linksmenu {
+    background-color: #24a2482f;
+    color: white;
+    padding: 2px 4px;
+    padding-right: 50px;
+    border-radius: 2px;
+}
+
+#faleconosco {
+    display: inline-table;
+}
+
+.linksmenu:hover {
+    background-color: #24a24857;
+    color: #84e1ad;
+    text-decoration: underline;
+}
+
+.linksmenu::after {
+    content: none;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+header > p {
+    text-align: center;
+    color: white;
+}
+
+/* Todos os Links */
+a {
+    color: #24A247;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a::after {
+    content: url(imagens/icons8-link-16.png);
+    margin: 3px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+h2, h3 {
+    font-family: 'idroid';
+    color: #24A247;
+    background-image: linear-gradient(to right, #9AD6AB 40%, #ffffffd0 110%);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+main {
+    background-color: #ffffffd0;
+    min-width: 250px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 8px 3px #3c50428f;
+    border-radius: 3px 3px 10px 10px;
+    text-align: justify;
+}
+
+#historia-mascote-android {
+    margin: auto;
+    padding: 20px;
+}
+
+/* Imagens e video */
+img {
+    width: 100%;
+    text-align: center;
+}
+
+#video {
+    background-image: linear-gradient(50deg, #203a2b 50%, #266538);
+    text-align: center;
+    padding: 13px 3px;
+    border-radius: 15px;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 7px;
+}
+
+/* Listas do quer aprender mais */
+#maissobre {
+    padding: 10px;
+}
+
+#maissobre > article {
+    background-color: #c7e4cf; 
+    padding-top: 2px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#maissobre > article > h4 {
+    background-color: #5FAD73;
+    margin: 0;
+    padding: 10px;
+    border-radius: 4px;
+} 
+
+ul {
+    column-count: 2; /* Para definir/divier o/em numero de colunas */
+    column-gap: 50px; /* Define o espaçamento entre as colunas */
+    text-decoration: underline;
+    list-style: '🗸 ';
+}
+
+li {
+    padding: 2px;
+    color: #26332A;
+    font-weight: bold;
+}
+
+/* Encerramento */
+#encerramento {
+    text-align: center;
+    padding: 4px 15px;
+}
+
+footer {
+    background-color: #26332A;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer > p {
+    margin: 0;
+}

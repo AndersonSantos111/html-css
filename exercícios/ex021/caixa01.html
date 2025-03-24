@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moldelo de caixas</title>
+    <style>
+        h1 { /* Box-level/block-level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* Forma Normal:
+            border-width: 10px;
+            border-style: solid;
+            border-color: lightgreen;
+            */
+
+            
+            border: 10px solid lightgreen; /* Forma Shorthand */
+
+
+            /* Forma Normal:
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-botton: 10px;
+            padding-left: 10px;
+            */
+
+            padding: 10px 10px 10px 10px; /* (Forma Shorthand) Se todos os lados forem iguais basta colocar um tamanho só por exemplo padding: 10px; desse forma essa medida será aplicada para todos os lados no caso desse padding o mais eficaz seria o padding: 10px; já que todos os lados são iguais*/
+
+            /* Forma Normal
+            margin-top: 40px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            */
+
+            margin: 40px 20 40px 20px; /* (Forma Shorthand) da mesma forma que é em padding se todos os lados forem iguais basta colocar um tamanho só, por exemplo, margin: 20px; desse forma essa medida será aplicada para todos os lados no caso do nosso código não é a forma eficaz ja que todos os lados não são iguais*/
+            
+            /* Podemos colocar apenas duas medidas dentro da margin ou padding ou outros, também dessa forma: margin: 40px 20px; , nesse caso a primera medida que é 40px vai se referir a margin-top e margin-botton e a segunda medida que é 20px vai se referir a margin-right e margin-left */
+
+
+            /* Forma Normal:
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: red;
+            */
+
+            outline: 10px dashed red; /* Forma Shorthand */
+            
+        }
+
+        a { /* inline-level */
+            /* Forma Normal:
+            border-width: 10px;
+            border-color: red;
+            border-style: solid;
+            */
+            
+            border: 10px solid red; /* Fomra Shorthand */
+            
+            /* Forma Normal:
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+
+            padding: 10px; /* Shorthand */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-levels</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exempls de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

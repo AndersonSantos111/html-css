@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block; /* para deixar as div na mesma linha. */
+            background-color: silver;
+            text-align: center; /* Para alinhamento do texto. */
+            height: 200px; /* Para altura. */
+            width: 200px; /* Para larguras. */
+            border: 1px solid  black; /* Para bordas. */
+        }
+
+
+        /* Pseudo classe são relacionadas ao estado de um determinado elemento ou classe ou id, ou seja se ele vai esta sendo tocado se ele esta vazio se ele esta ativo se ele ta abilitado e etc. */
+
+        /* representamos uma pseudo-classe com o simbolo dois pontos(:) */
+        div:hover { /* pseudo-classe hover serve para fazer uma ação quando passar ou estiver com o mouse em cima do elemento nesse caso o elemento é a div. */
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Uma div é nada mais do que um epaço qualquer vazio que você pode preencher como quieser ou é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. -->
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</body>
+</html>

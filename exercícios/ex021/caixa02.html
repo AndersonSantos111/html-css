@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(85, 85, 85);
+            padding: 1px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+        }
+
+        nav > a {
+            color: white;
+            text-decoration: none;
+            padding-right: 40px;
+            font-weight: bold;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; /* 10px refere a borda superior esquerda e infeiror esquerda, e 0px refere a borda infeiro esquerda e superior direita */
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.459);
+        }
+
+        #assuntos {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        article {
+            background-color: lightgray;
+            text-align: justify;
+            padding: 5px;
+        }
+
+
+
+        article > aside {
+            background-color: rgb(167, 167, 167);
+            color: white;
+            padding: 1px;
+            padding-left: 4px;
+        }
+
+        footer {
+            background-color: rgb(27, 27, 27);
+            color: white;
+            padding: 3px;
+            text-align: center;
+            
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- O <header> é um modelo de caixa box-level/block-level como uma div porem ela é semântica que tem significado de cabeçalho do site onde fica o título menus e etc. -->
+        <h1>Meu Site</h1>
+        <nav> <!-- O <nav> representa uma seção de uma página que aponta para outras páginas ou outras áreas da página. -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- O <main> também sendo box-level tem a semântica de conteudo principal -->
+        <section id="assuntos"> <!-- Como a sua tradução já diz a tag <section> é uma seção usamos sempre que quisermos criar uma seção. -->
+            Esportes Política Tecnologia
+        </section>
+        <section id="noticias">
+            <article> <!-- O <article> que como sua tradução ja indica, de forma semântica serve para artigos. -->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ducimus, dignissimos quisquam voluptatum sapiente sunt ut voluptatibus voluptas qui autem labore ipsam ea molestias deleniti laudantium rerum. Dolor, commodi earum!</p>
+                <aside> <!-- O <aside> é uma seção que faz referencia ao bloco que esta em seu entorno, nesse caso ela ta fazendo referência a tag <article>, geralmente é ela fica na lateral da página e ela muitas verzes contem é explicaçôes laterais como definição de um glossário, conteúdo vagamente relacionado, como avisos, a biografia de um autor. -->
+                    Artigo escrito por José da Silva
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Do mesmo modo <footer> tem semântica de roda-pé.  -->
+        <p>Produzido por &copy;AS</p>
+    </footer>
+</body>
+</html>
