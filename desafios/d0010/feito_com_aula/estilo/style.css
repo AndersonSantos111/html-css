@@ -180,7 +180,7 @@ aside > h3 {
 }
 
 aside ul {
-    list-style-type: '\2714\00A0\00A0'; /* Código de emoji com a barra invertida na frente para colocar o emoje no estilo no lugar da bolinha que vem por padrão e o barra 00A0 é para da um espaço támbem chamado de NBSP espaço sem quebra. 0bs.: não é compativel com todo navegador */
+    list-style-type: '\2714\00A0\00A0'; /* Código de emoji com a barra invertida na frente para colocar o emoje no estilo no lugar da bolinha que vem por padrão e o barra 00A0 é para da um espaço támbem chamado de NBSP espaço sem quebra. Obs.: não é compativel com todo navegador */
     list-style-position: inside; /* Ou outside para a bolinha ficar do lado de fora*/
     columns: 2; /* Para dividir em colunas que você quiser nesse caso ta sendo duas colunas */
 }
