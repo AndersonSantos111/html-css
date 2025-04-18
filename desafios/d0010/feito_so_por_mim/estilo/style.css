@@ -47,16 +47,25 @@ header h1 {
     margin-bottom: 20px;
     font-family: var(--fonte-destaque);
     font-size: 3.2em;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.829);
 }
 
 header p {
     padding-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
 }
 
 /* Links externos */
 a.linkExternal {
     color: var(--cor3);
     font-weight: bolder;
+    text-decoration: none;
+}
+
+a.linkExternal:hover {
+    color: var(--cor4);
+    text-decoration: underline;
 }
 
 a.linkExternal::after {
@@ -66,6 +75,7 @@ a.linkExternal::after {
 nav {
     background-color: var(--cor5);
     padding: 6px;
+    box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.459);
 }
 
 nav a {
@@ -85,15 +95,21 @@ nav a:hover {
 main {
     background-color: #fff;
     margin: auto;
+    box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.459);
     min-width: 250px;
     max-width: 1100px;
     padding: 20px;
+    border-radius: 5px;
+}
+
+main h1, h2 {
+    font-family: var(--fonte-idroid);
 }
 
 main h1 {
     color: var(--cor3);
-    font-family: var(--fonte-idroid);
     font-size: 1.7em;
+    font-family: var(--fonte-idroid);
     margin: 0px 0px 10px 0px;
 }
 
@@ -105,7 +121,7 @@ main h2 {
 
 main p {
     text-indent: 30px;
-    line-height: 2.3em;
+    line-height: 2.2em;
     text-align: justify;
 }
 
@@ -144,5 +160,58 @@ main .video > iframe {
 }
 
 /* conteudo extra */
+main aside {
+    background-color: var(--cor0);
+    margin: 0px -12px ;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+main aside > h3 {
+    background-color: var(--cor3);
+    padding: 10px;
+    margin: -15px -10px 0px -15px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+main aside > ul {
+    background-color: var(--cor3);
+    border-radius: 5px;
+    padding:5px;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    text-decoration: none;
+    columns: 2;
+}
+
+main aside > ul > li {
+    background-color: var(--cor1);
+    margin-bottom: 10px;
+    padding: 2px;
+    border-radius: 0px 5px;
+    font-weight: bold;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+
 
 /* roda pe do site */
+footer {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4), var(--cor5));
+    padding: 30px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 30px;
+}
+
+footer a {
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
