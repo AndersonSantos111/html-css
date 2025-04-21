@@ -177,7 +177,7 @@ main aside > h3 {
 main aside > ul {
     background-color: var(--cor3);
     border-radius: 5px;
-    padding:5px;
+    padding: 8px;
     list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;
     text-decoration: none;
@@ -200,18 +200,28 @@ abbr {
 
 /* roda pe do site */
 footer {
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4), var(--cor5));
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4), var(--cor5));
     padding: 30px;
     text-align: center;
 }
 
 footer p {
+    font-weight: bold;
+    font-size: 1.1em;
     margin-bottom: 30px;
 }
 
 footer a {
+    background-image: linear-gradient(to top, var(--cor5) 10%, transparent 80%);
     color: #fff;
+    display: flex;
+    padding: 5px;
     margin: 10px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 50px;
+}
+
+footer  a  img {
+    height: 50%;
 }
