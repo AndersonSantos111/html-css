@@ -53,7 +53,11 @@ section {
     padding: 10vh 0px 10vh 30px;
     line-height: 2.2em;
     font-family: var(--fonte3);
-    font-size: clamp(1.2em, 5vw, 2.5em); /* Usamos o clamp para limitar o tamnho minimo, ideal e maximo da fonte */
+    font-size: clamp(1.2em, 3vw, 2.5em); /* Usamos o clamp para limitar o tamnho minimo, ideal e maximo da fonte */
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -63,12 +67,14 @@ section.normal {
 section.imagem {
     background-color: rgb(36, 36, 36);
     color: white;
+    box-shadow: inset 3px 3px 4px 0px rgba(0, 0, 0, 0.562);
 }
 
 section.imagem > p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.301);
     padding: 10px;
+    text-shadow: 1px 1px 2px black;
 }
 
 #img1 {
@@ -77,7 +83,7 @@ section.imagem > p {
 }
 
 #img2 {
-    background: url('imagens/background002.jpg') center center no-repeat fixed;
+    background: url('imagens/background002.jpg') right center no-repeat fixed;
     background-size: cover;
 }
 
